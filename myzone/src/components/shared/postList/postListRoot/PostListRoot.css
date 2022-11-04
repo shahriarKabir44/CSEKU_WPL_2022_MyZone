@@ -1,0 +1,30 @@
+.postsView {
+    margin: auto;
+    overflow-x: hidden;
+
+    overflow-y: auto;
+    margin: 10px;
+}
+
+@media screen and (min-width:620px) {
+    .postsView {
+        max-height: var(--containerHeightLarge);
+
+    }
+
+
+}
+
+@media screen and (max-width:620px) {
+    .postsView {
+        max-height: var(--containerHeightSmall);
+        width: 100vw;
+        margin: 0 !important;
+    }
+
+
+}
+
+.postsView::-webkit-scrollbar {
+    display: none;
+}

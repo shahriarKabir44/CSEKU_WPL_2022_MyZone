@@ -1,0 +1,66 @@
+.mainView {
+    display: grid;
+    grid-template-columns: 20% 40% 20%;
+
+    max-height: var(--containerHeightLarge);
+    overflow-y: hidden;
+    background: #18191A;
+    justify-content: space-between;
+}
+
+.mainViewSmall {
+
+    display: grid;
+    grid-template-columns: auto;
+    max-height: var(--containerHeightSmall);
+    overflow-y: hidden;
+    background: #18191A;
+}
+
+
+
+@media screen and (min-width:620px) {}
+
+@media screen and (max-width:620px) {
+
+    .slideLeftMenu {
+        position: absolute;
+        width: calc(100vw - 20px);
+        left: -100vw;
+        z-index: 1000;
+        max-height: var(--containerHeightSmall);
+        overflow: hidden;
+    }
+
+    .slideRight {
+        animation-name: slideRight;
+        animation-duration: .6s;
+        animation-fill-mode: forwards;
+    }
+
+    .slideLeft {
+        animation-name: slideLeft;
+        animation-duration: .6s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes slideRight {
+        0% {
+            left: -100vw;
+        }
+
+        100% {
+            left: 0vw;
+        }
+    }
+
+    @keyframes slideLeft {
+        100% {
+            left: -100vw;
+        }
+
+        0% {
+            left: 0vw;
+        }
+    }
+}

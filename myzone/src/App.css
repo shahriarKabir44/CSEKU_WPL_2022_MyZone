@@ -1,0 +1,118 @@
+:root {
+    --sidemenuWidth: 30vw;
+    --negativeSideMenuWidth: -30vw;
+    --containerHeightLarge: calc(100vh - 57px);
+    --containerHeightSmall: calc(100vh - 90px);
+    --navBarHeightLarge: 57px;
+    --navBarHeightSmall: 90px;
+}
+
+.notificationsContainerRoot {
+    overflow-y: auto;
+    max-height: calc(100% - 77px);
+    height: calc(100% - 77px);
+}
+
+.SlideInContainerRoot {
+    position: absolute;
+    height: var(--containerHeightLarge);
+    top: var(--navBarHeightLarge);
+    background: white;
+    z-index: 1000;
+
+    overflow-y: auto;
+
+    width: var(--sidemenuWidth);
+    right: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.slideContainerRight {
+    animation-name: slideContainerRight;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.slideContainerLeft {
+    animation-name: slideContainerLeft;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+}
+
+.SlideInContainerRoot::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width:620px) {
+    :root {
+        --sidemenuWidth: 90vw;
+        --negativeSideMenuWidth: -90vw;
+    }
+
+    .SlideInContainerRoot {
+        top: 130px;
+        height: var(--containerHeightSmall);
+    }
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    color: white;
+    font-weight: 100;
+    font-size: "15px";
+}
+
+@keyframes slideContainerRight {
+    0% {
+        left: var(--negativeSideMenuWidth);
+    }
+
+    100% {
+        left: 0vw;
+    }
+}
+
+@keyframes slideContainerLeft {
+    100% {
+        left: -var(--sidemenuWidth);
+    }
+
+    0% {
+        left: 0vw;
+    }
+}
+
+.tabContainer {
+    display: flex;
+    grid-template-columns: 20% auto;
+    position: sticky;
+    top: -10px;
+    background: #18191a;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100vw;
+    z-index: 1000;
+    justify-content: center;
+}
+
+.red {
+    background: red
+}
+
+.tabItem {
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 20px;
+    color: white;
+}
+
+.active {
+    border-bottom: 3px solid blue;
+}

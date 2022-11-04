@@ -1,0 +1,11 @@
+.searchResultContainer {
+    background: #18191a;
+    height: var(--containerHeightLarge);
+    margin: 0;
+    overflow-y: auto;
+}
+
+.searchResultsRoutesRoot {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+}

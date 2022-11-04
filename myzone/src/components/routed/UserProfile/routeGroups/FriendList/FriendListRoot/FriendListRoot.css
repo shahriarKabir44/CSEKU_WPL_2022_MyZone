@@ -1,0 +1,23 @@
+.friendListContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-gap: 10px
+}
+
+.friendListCOntainerRoot {
+    display: flex;
+    justify-content: center;
+    padding: 50px
+}
+
+@media screen and (max-width:620px) {
+    .friendListContainer {
+        grid-template-columns: repeat(1, 80vw);
+
+    }
+}
+
+.friendListheadingTextContainer {
+    display: flex;
+    justify-content: center;
+}

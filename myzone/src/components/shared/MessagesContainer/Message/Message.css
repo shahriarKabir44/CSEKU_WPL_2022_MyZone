@@ -1,0 +1,43 @@
+.messageContainerRoot {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+
+}
+
+.sent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sent>div {
+    background: #0084ff;
+}
+
+.received>div {
+    background: #3e4042;
+}
+
+.received {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.messageText {
+
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+
+.innerContainer {
+    margin: 5px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 200;
+    max-width: 60%;
+    overflow-wrap: break-word;
+}

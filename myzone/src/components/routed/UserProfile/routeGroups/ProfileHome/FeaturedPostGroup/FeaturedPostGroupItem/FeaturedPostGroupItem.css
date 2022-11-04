@@ -1,0 +1,39 @@
+.featuredImageContainer {
+
+    aspect-ratio: 3/4;
+    background: #5d5f61;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.featuredPostContainer {
+    width: 110px;
+    background: #202122;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.featuredImage {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.groupLabel {
+    display: flex;
+    justify-content: center;
+    line-height: 1px;
+    margin: 0;
+}
+
+.groupLabelText {
+
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+
+}

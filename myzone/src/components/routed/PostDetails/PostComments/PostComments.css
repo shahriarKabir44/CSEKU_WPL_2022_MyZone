@@ -1,0 +1,44 @@
+.commenterImg {
+    aspect-ratio: 1;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.commentActionsContainer {
+    display: grid;
+    grid-template-columns: auto 34px;
+    align-items: center;
+}
+
+.postCommentInput {
+    padding: 10px;
+    border-radius: 13px
+}
+
+.commentAction {
+    color: white;
+    cursor: pointer;
+}
+
+.commentRoot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px;
+}
+
+.commenterName {
+    font-weight: bold;
+}
+
+.commenterName,
+.commentBody,
+.commentTime {
+    margin: 0;
+    color: white;
+    font-weight: 200;
+}
+
+.commentTime {
+    font-size: 10px;
+}

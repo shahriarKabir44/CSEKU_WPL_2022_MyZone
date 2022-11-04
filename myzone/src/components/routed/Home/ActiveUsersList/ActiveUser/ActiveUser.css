@@ -1,0 +1,27 @@
+.activeUserContainer {
+    display: grid;
+    grid-template-columns: 50px auto;
+    /* background: #5D5F61; */
+    padding: 2px 12px;
+    margin: 5px;
+    /* border-radius: 10px; */
+    /* border: 1px solid white; */
+    align-items: center;
+    align-content: center;
+
+}
+
+.activeUserImgContainer {
+    width: 40px;
+}
+
+.activeUserImg {
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+}
+
+.activeUserName {
+    color: white;
+    font-weight: 200;
+}

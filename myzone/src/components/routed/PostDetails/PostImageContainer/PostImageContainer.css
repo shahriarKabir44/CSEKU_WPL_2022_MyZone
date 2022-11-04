@@ -1,0 +1,45 @@
+ .imgContainer {
+     max-height: 50vh;
+     height: 50vh;
+     display: flex;
+     justify-content: center;
+ }
+
+ .postImgContainer {
+     display: flex;
+     justify-content: center;
+ }
+
+ .postImageContainer {
+     display: flex;
+     justify-content: center;
+ }
+
+ .swipeContainerRoot {
+     display: flex;
+     justify-content: center;
+
+ }
+
+ .postImage {
+     width: 100%;
+ }
+
+ .focusedImg {
+     max-width: 100%;
+     max-height: 40vh;
+ }
+
+ .swipeContainer {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+ }
+
+ .swipeBtn {
+     display: flex;
+
+     align-items: center;
+     justify-content: space-between;
+     border-radius: 5px;
+ }

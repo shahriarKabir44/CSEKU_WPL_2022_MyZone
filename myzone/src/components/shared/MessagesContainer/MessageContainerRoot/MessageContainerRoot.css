@@ -1,0 +1,12 @@
+.messagesContainerRoot {
+    max-height: 100%;
+    height: calc(100%);
+
+    overflow-y: auto;
+    background: #242526;
+    border-radius: 10px;
+}
+
+.messagesContainerRoot::-webkit-scrollbar {
+    display: none;
+}

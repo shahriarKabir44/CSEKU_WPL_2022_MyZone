@@ -1,0 +1,43 @@
+.FriendListItemContainer {
+    display: flex;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.friendImageContainer {
+    width: 90px;
+    border-radius: 20px;
+    aspect-ratio: 1;
+}
+
+.friendImage {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 1;
+    border-radius: 20px;
+
+}
+
+.friendListheadingText {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    width: 60vw;
+}
+
+.friendTime {
+    overflow-wrap: break-word;
+    font-size: 15px;
+}
+
+.frinedInfoContainer {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    font-weight: 100;
+    gap: 0;
+    flex-direction: column;
+}

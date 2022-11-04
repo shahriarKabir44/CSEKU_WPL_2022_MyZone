@@ -1,0 +1,47 @@
+.textingContainerRoot {
+    padding: 10px;
+    height: calc(100% - 20px);
+}
+
+.conversationListContainer {
+    max-height: var(--containerHeightLarge);
+    overflow-y: auto;
+}
+
+.messengerContainer {
+    max-height: var(--containerHeightLarge);
+    background: #f57878;
+
+}
+
+@media screen and (max-width: 620px) {
+    .messengerContainer {
+        max-height: var(--containerHeightSmall);
+        height: var(--containerHeightSmall);
+    }
+}
+
+.participantInfoContainer {
+
+    align-items: center;
+
+}
+
+.participantImageContainer {
+    width: 50px;
+}
+
+.participantName,
+.activityStatus {
+    margin: 0;
+}
+
+.messagesContainer {
+    height: calc(100% - 90px);
+}
+
+@media screen and(max-width: 620px) {
+    .messagesContainer {
+        height: calc(100% - 50px);
+    }
+}

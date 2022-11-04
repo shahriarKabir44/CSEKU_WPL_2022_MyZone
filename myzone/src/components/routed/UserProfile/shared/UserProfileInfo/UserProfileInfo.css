@@ -1,0 +1,110 @@
+.userProfileInfoContainer {
+    position: relative;
+    margin: auto;
+    align-items: center;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 10px;
+}
+
+.profileViewLargeScreen {
+    background: #18191A;
+    overflow-y: auto
+}
+
+
+@media screen and (min-width:620px) {
+    .profileViewLargeScreen {
+        max-height: var(--containerHeightLarge);
+    }
+
+
+}
+
+@media screen and (max-width:620px) {
+    .profileViewLargeScreen {
+        max-height: var(--containerHeightSmall);
+    }
+
+
+}
+
+.profileViewLargeScreen::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media screen and (max-width:620px) {
+
+
+    .profileViewUserInfoContainer {
+        /* margin-top: -50px; */
+
+    }
+
+}
+
+@media screen and (min-width:620px) {
+
+
+
+    .nameAndPropic {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profileViewUserInfoContainer {
+        /* margin-top: -75px; */
+
+    }
+
+}
+
+
+
+.coverPhotoContainer {
+    width: 80vw;
+    margin: auto;
+}
+
+.userName {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.textInfo {
+    line-height: 0px;
+    color: white;
+}
+
+.nameContainer {
+    color: white;
+    display: grid;
+    align-items: start;
+    align-content: center;
+    grid-template-columns: 70px auto;
+    flex: 1 1;
+    margin: 20px;
+}
+
+.userCoverPhoto {
+    width: 100%;
+    max-height: 60vh;
+}
+
+
+.profileViewUserInfoContainer {
+    width: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+
+}
+
+.profileViewProPic {
+    width: 100%;
+    aspect-ratio: 1;
+}
